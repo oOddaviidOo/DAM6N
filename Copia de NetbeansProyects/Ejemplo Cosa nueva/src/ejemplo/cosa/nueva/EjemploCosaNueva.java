@@ -16,7 +16,7 @@ public class EjemploCosaNueva {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Frame f=new Frame();
+        Ventana f=new Ventana();
         f.setVisible(true);
     }
     

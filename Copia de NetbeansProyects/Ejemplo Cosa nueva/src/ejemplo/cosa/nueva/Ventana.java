@@ -5,25 +5,36 @@
  */
 package ejemplo.cosa.nueva;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
  *
  * @author DAM 6N
  */
-public class Frame extends JFrame{
-int x=0,y=0;
-    public Frame() {
+public class Ventana extends JFrame{
+int x=-100,y=-100;
+int disparos=10;
+    JLabel j;
+
+
+    public Ventana() {
         setTitle("Ejemplo Cosa Nueva");
         setSize(800, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setResizable(true);
+        setResizable(false);
         Panel p=new Panel();
+        j=new JLabel("Disparos:     "+disparos);
+        BorderLayout bl=new BorderLayout();
+        p.setLayout(bl);
+        p.add(j, bl.SOUTH);
         add(p);
         
     }
@@ -35,7 +46,6 @@ int x=0,y=0;
         }
 
         public void paint(Graphics g){
-        super.paint(g);
         g.setColor(Color.BLACK);
         g.fillOval(x, y, 10, 10);
         }
@@ -45,6 +55,13 @@ int x=0,y=0;
             x=me.getX();
             y=me.getY();
             repaint();
+            disparos--;
+            j.setText("Disparos:     "+disparos);
+            if (disparos==0) {
+            JFrame frame=new JFrame("Derrota");
+            JOptionPane.showMessageDialog(frame, "Derrota, no te quedan tiros");
+            System.exit(0);
+        }
         }
         @Override
         public void mousePressed(MouseEvent me) {
@@ -60,6 +77,7 @@ int x=0,y=0;
         }
         @Override
         public void mouseExited(MouseEvent me) {
+            
             
         }
         
