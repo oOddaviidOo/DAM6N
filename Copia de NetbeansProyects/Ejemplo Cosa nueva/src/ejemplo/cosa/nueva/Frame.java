@@ -31,13 +31,13 @@ int x=0,y=0;
     public class Panel extends JPanel implements MouseListener{
 
         public Panel() {
-        
+        this.addMouseListener(this);
         }
 
         public void paint(Graphics g){
         super.paint(g);
         g.setColor(Color.BLACK);
-        g.fillOval(10, 10, 10, 10);
+        g.fillOval(x, y, 10, 10);
         }
         
         @Override
