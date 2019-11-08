@@ -31,16 +31,16 @@ public class Ventana extends JFrame{
     private final String[] ingredientes={"Peperoni", "Salchicha", "Parmesano","Olivas", 
                     "Champi","Tomates","Anchoas","Pollo", "Ternera","Salsa Barbacoa"};
     //pequeña, grande, mediana, delgada, gruesa
-    public JRadioButton rb1=new  JRadioButton(), rb2=new  JRadioButton(),  rb3=new  JRadioButton(),  rb4=new  JRadioButton(),  rb5=new  JRadioButton();
+    public JRadioButton[] rb;
     //"Peperoni", "Salchicha", "Parmesano","Olivas", 
     //"Champi","Tomates","Anchoas","Pollo", "Ternera","Salsa Barbacoa"
-    public JCheckBox cb1=new  JCheckBox(),  cb2=new  JCheckBox(),  cb3=new  JCheckBox(),  cb4=new  JCheckBox(),  cb5=new  JCheckBox(),  cb6=new  JCheckBox(),  cb7=new  JCheckBox(),  cb8=new  JCheckBox(),  cb9=new  JCheckBox(),  cb10=new  JCheckBox();
+    public JCheckBox[] cb;
     //haga su pedido ahora, nombre, telefono, direccion
-    public JLabel l1, l2, l3, l4;
+    public JLabel[] l;
     //nombre, telefono, direccion
-    public JTextField tf1, tf2, tf3;
+    public JTextField[] tf;
     //aceptar, cancelar
-    public JButton b1, b2;
+    public JButton[] b;
 
     public Ventana() {
         setTitle("Pedido Pizza");
@@ -76,44 +76,29 @@ public class Ventana extends JFrame{
         JPanel panelIngredientes=new JPanel();
         
         //tamaño
-        rb1.setText(tamaño[0]);
-        panelTamaño.add(rb1);
-        rb1.addItemListener(new ManejadorCheckBox());
-        rb2.setText(tamaño[1]);
-        panelTamaño.add(rb2);
-        rb2.addItemListener(new ManejadorCheckBox());
-        rb3.setText(tamaño[2]);
-        panelTamaño.add(rb3);
-        rb3.addItemListener(new ManejadorCheckBox());
+        for (int i = 0; i < tamaño.length; i++) {
+            rb[i]=new JRadioButton();
+            rb[i].setText(tamaño[i]);
+            rb[i].addItemListener(new ManejadorCheckBox());
+            panelTamaño.add(rb[i]);}
         //masa
-        rb4.setText(masas[0]);
-        panelMasa.add(rb4);
-        rb4.addItemListener(new ManejadorCheckBox());
-        rb5.setText(masas[1]);
-        panelMasa.add(rb5);
-        rb5.addItemListener(new ManejadorCheckBox());
+        for (int i = tamaño.length-1; i < masas.length; i++) {
+            int j=0;
+            rb[i]=new JRadioButton();
+            rb[i].setText(tamaño[j]);
+            rb[i].addItemListener(new ManejadorCheckBox());
+            j++;
+            panelMasa.add(rb[i]);}
         //ingredientes
-        cb1.setText(ingredientes[0]);
-        panelIngredientes.add(cb1);
-        cb2.setText(ingredientes[1]);
-        panelIngredientes.add(cb2);
-        cb3.setText(ingredientes[2]);
-        panelIngredientes.add(cb3);
-        cb4.setText(ingredientes[3]);
-        panelIngredientes.add(cb4);
-        cb5.setText(ingredientes[4]);
-        panelIngredientes.add(cb5);
-        cb6.setText(ingredientes[5]);
-        panelIngredientes.add(cb6);
-        cb7.setText(ingredientes[6]);
-        panelIngredientes.add(cb7);
-        cb8.setText(ingredientes[7]);
-        panelIngredientes.add(cb8);
-        cb9.setText(ingredientes[8]);
-        panelIngredientes.add(cb9);
-        cb10.setText(ingredientes[9]);
-        panelIngredientes.add(cb10);
+        for (int i = 0; i < ingredientes.length; i++) {
+            cb[i]=new JCheckBox();
+            cb[i].setText(ingredientes[i]);
+            panelIngredientes.add(cb[i]);
+        }
         //cliente y cabecera
+        for (int i = 0; i < 10; i++) {
+            
+        }
         l1.setText("¡Haga su pedido ahora!");
         panelCliente.add(l1);
         l2.setText("Nombre:");
@@ -150,10 +135,10 @@ public class Ventana extends JFrame{
     @Override
     public void actionPerformed(ActionEvent ae) throws UnsupportedOperationException{
         Object source=ae.getSource();
-        if (source==b1) {
+        if (source==b[0]) {
             //guarda datos cliente y datos pizza + imprimir
         }
-        if (source==b2) {
+        if (source==b[1]) {
             System.exit(0);
         }
     }
@@ -163,19 +148,19 @@ public class Ventana extends JFrame{
 
         @Override
         public void itemStateChanged(ItemEvent ie) throws UnsupportedOperationException{
-            if (ie.getSource()==rb1) {
+            if (ie.getSource()==rb[0]) {
                 
             }
-            if (ie.getSource()==rb2) {
+            if (ie.getSource()==rb[1]) {
                 
             }
-            if (ie.getSource()==rb3) {
+            if (ie.getSource()==rb[2]) {
                 
             }
-            if (ie.getSource()==rb4) {
+            if (ie.getSource()==rb[3]) {
                 
             }
-            if (ie.getSource()==rb5) {
+            if (ie.getSource()==rb[4]) {
                 
             }
         }
