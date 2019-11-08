@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Practica0r</string>
+    <string name="tvTitulo">Primera App</string>
+    <string name="etNombre" />
+    <string name="btnAccion">Continuar</string>
+    <string name="tvInfo" />
+    <string name="btnSalir">Salir</string>
+</resources>
