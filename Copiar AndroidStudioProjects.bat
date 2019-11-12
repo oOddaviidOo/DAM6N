@@ -1,1 +1,0 @@
-xcopy "C:\Users\DAM 6N\AndroidStudioProjects\*" "C:\Users\DAM 6N\Documents\Repositorio\Copia de AndroidStudioProjects" /E /H

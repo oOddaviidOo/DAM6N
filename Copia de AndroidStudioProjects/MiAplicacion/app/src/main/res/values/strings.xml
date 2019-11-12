@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">MiAplicacion</string>
-    <string name="titulo">Esta es la Primera App</string>
-    <string name="info">Aqui ahora mismo no se tiene que ver nada, luego mostraremos el mensaje de bienvenida</string>
-    <string name="btnAccion">Continuamos</string>
-    <string name="etInfo">Dinos cual es tu nombre</string>
-    <string name="btnFin">Salir</string>
-</resources>

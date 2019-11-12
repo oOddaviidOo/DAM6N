@@ -1,1 +1,0 @@
-xcopy "C:\Users\DAM 6N\Documents\NetBeansProjects\*" "C:\Users\DAM 6N\Documents\Repositorio\Copia de NetbeansProyects" /E /H

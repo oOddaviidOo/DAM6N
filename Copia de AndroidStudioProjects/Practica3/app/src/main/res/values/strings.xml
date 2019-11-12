@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Practica3</string>
-    <string name="dfGama">Elige Gama</string>
-    <string name="tvInfo">Elige la gama que mas te guste</string>
-    <string name="tvTitulo">Los Colores</string>
-    <string name="despedida">Chao</string>
-
-</resources>
