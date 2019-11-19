@@ -30,7 +30,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
-    
+
 
         
     <record model="ir.ui.view" id="view_karting_racer_form">
@@ -81,7 +81,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
-    
+
 
         
     <record model="ir.ui.view" id="view_karting_diary_form">
@@ -118,7 +118,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form,calendar</field>
     </record>
-    
+
 
         
     <record model="ir.ui.view" id="view_karting_diary_racer_form">
@@ -161,7 +161,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
-    
+
 
         
     <record model="ir.ui.view" id="view_karting_kart_type_form">
@@ -171,8 +171,7 @@
         <field name="arch" type="xml">
             <form string="karting.kart_type">
                 <field name="name" select="1"/>
-                <field name="duration" select="2"/>
-                <field name="cilinder_capacity" select="0"/>
+                <field name="cilinder_capacity" select="2"/>
 
             </form>
         </field>
@@ -184,7 +183,6 @@
         <field name="arch" type="xml">
             <tree string="karting.kart_type">
                 <field name="name"/>
-                <field name="duration"/>
                 <field name="cilinder_capacity"/>
 
             </tree>
@@ -196,7 +194,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
-    
+
 
         
     <record model="ir.ui.view" id="view_karting_racer_group_form">
@@ -228,7 +226,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
-    
+
 
         
     <record model="ir.ui.view" id="view_karting_round_form">
@@ -238,7 +236,8 @@
         <field name="arch" type="xml">
             <form string="karting.round">
                 <field name="name" select="1"/>
-                <field name="diary_id" select="2"/>
+                <field name="duration" select="2"/>
+                <field name="diary_id" select="0"/>
                 <field name="racer_ids" colspan="4" select="0"/>
 
             </form>
@@ -251,6 +250,7 @@
         <field name="arch" type="xml">
             <tree string="karting.round">
                 <field name="name"/>
+                <field name="duration"/>
                 <field name="diary_id"/>
 
             </tree>
@@ -262,7 +262,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
-    
+
 
     <menuitem name="Karting" id="menu_karting"/>
     <menuitem name="Racers" id="menu_karting_racer" action="action_karting_racer" parent="menu_karting"/>
@@ -273,6 +273,8 @@
     <menuitem name="Configuration" id="menu_karting_configuration" parent="menu_karting"/>
     <menuitem name="Circuits" id="menu_karting_circuit" action="action_karting_circuit" parent="menu_karting_configuration"/>
     <menuitem name="Types of karts" id="menu_karting_kart_type" action="action_karting_kart_type" parent="menu_karting_configuration"/>
+
+
 
         
 </data>

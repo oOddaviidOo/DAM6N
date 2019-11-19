@@ -36,7 +36,6 @@ class karting_circuit(osv.osv):
 karting_circuit()
 
 class karting_racer(osv.osv):
-    """(NULL)"""
     _name = 'karting.racer'
     _columns = {
         'first_name': fields.char('First name',size=30,required=True),
@@ -82,13 +81,11 @@ class karting_kart_type(osv.osv):
     _name = 'karting.kart_type'
     _columns = {
         'name': fields.char('Type',size=30,required=True),
-        'duration': fields.integer('Duration',required=True),
         'cilinder_capacity': fields.integer('Cilinder Capacity (cc)'),
     }
 karting_kart_type()
 
 class karting_racer_group(osv.osv):
-    """(NULL)"""
     _name = 'karting.racer.group'
     _columns = {
         'name': fields.char('Group',size=30),
@@ -100,6 +97,7 @@ class karting_round(osv.osv):
     _name = 'karting.round'
     _columns = {
         'name': fields.float('Time'),
+        'duration': fields.integer('Duration',required=True),
         'diary_id': fields.many2one('karting.diary','Diary'),
         'racer_ids': fields.one2many('karting.diary.racer','round_id','Racers',readonly=True),
     }
