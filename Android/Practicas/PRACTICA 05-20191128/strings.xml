@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Practica05</string>
+    <string name="action_settings">Settings</string>
+    <string name="tvTitulo">Lista de Deportes</string>
+
+    <string name="miAdd">Añadir un deporte</string>
+    <string name="miList">Vista como lista</string>
+    <string name="miGrid">Vista como rejilla</string>
+
+    <string name="Titulo">Lista de Deportes</string>
+    <string name="tvNivelDeporte">Dinos tu nivel al practicarlo</string>
+    <string name="niv1">1</string>
+    <string name="niv2">2</string>
+    <string name="niv3">3</string>
+    <string name="niv4">4</string>
+    <string name="niv5">5</string>
+    <string name="niv6">6</string>
+    <string name="niv7">7</string>
+    <string name="niv8">8</string>
+    <string name="niv9">9</string>
+    <string name="niv10">10</string>
+    <string name="tvInfoStation">En que epoca del año se practica</string>
+    <string name="etDeporteHint">Escribe el nombre del deporte</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_can">CANCELAR</string>
+    <string name="est00">ic_summer_64</string>
+    <string name="est01">ic_autumn_64</string>
+    <string name="est02">ic_winter_64</string>
+    <string name="est03">ic_spring_64</string>
+</resources>

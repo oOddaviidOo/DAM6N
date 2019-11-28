@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="productos">
+        <item>Manzanas</item>
+        <item>Merluza</item>
+        <item>Galletas</item>
+        <item>Leche</item>
+        <item>Ternera</item>
+        <item>Tomate</item>
+    </string-array>
+    <string-array name="tipo">
+        <item>ic_fruta_verd</item>
+        <item>ic_pescados</item>
+        <item>ic_panaderia</item>
+        <item>ic_lacteos</item>
+        <item>ic_carne</item>
+        <item>ic_fruta_verd</item>
+    </string-array>
+
+
+</resources>

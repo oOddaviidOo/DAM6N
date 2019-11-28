@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="idDep">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="nomDep">
+        <item>Natacion</item>
+        <item>Ciclismo</item>
+        <item>Ajedrez</item>
+        <item>Tenis</item>
+        <item>Parchis</item>
+        <item>Surf</item>
+    </string-array>
+    <integer-array name="nivDep">
+        <item>6</item>
+        <item>5</item>
+        <item>6</item>
+        <item>4</item>
+        <item>8</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="estDep">
+        <item>ic_summer_64</item>
+        <item>ic_autumn_64</item>
+        <item>ic_winter_64</item>
+        <item>ic_spring_64</item>
+        <item>ic_winter_64</item>
+        <item>ic_summer_64</item>
+    </string-array>
+
+
+
+
+
+    <string-array name="estaciones">
+        <item>ic_summer_64</item>
+        <item>ic_autumn_64</item>
+        <item>ic_winter_64</item>
+        <item>ic_spring_64</item>
+    </string-array>
+
+
+</resources>

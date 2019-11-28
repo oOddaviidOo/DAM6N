@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="libros">
+        <item>El Hobbit</item>
+        <item>El Señor de los Anillos</item>
+        <item>La Fundación</item>
+        <item>La Metamorfosis</item>
+        <item>La Segunda Fundación</item>
+        <item>El Juego de Ender</item>
+        <item>Fundación e Imperio</item>
+        <item>El idolo perdido</item>
+        <item>Sangre en el Támesis</item>
+        <item>La Cámara de Obsidiana</item>
+        <item>El Ocho</item>
+    </string-array>
+
+    <string-array name="musica">
+        <item>Queen</item>
+        <item>The Beatles</item>
+        <item>The Rolling Stones</item>
+        <item>The Who</item>
+        <item>The Doors</item>
+        <item>Guns and Roses</item>
+        <item>White Snake</item>
+        <item>The Eagles</item>
+        <item>Boston</item>
+        <item>Nirvana</item>
+        <item>Pink Floyd</item>
+        <item>The Police</item>
+    </string-array>
+
+    <string-array name="peliculas">
+        <item>2001</item>
+        <item>Casablanca</item>
+        <item>Blade Runner</item>
+        <item>Alien. El octavo pasajero</item>
+        <item>2010</item>
+        <item>Star Wars (Todas)</item>
+        <item>Matrix (Trilogia)</item>
+        <item>Priscila reina del desierto</item>
+        <item>Encuentros en la 3ª fase</item>
+        <item>Origen</item>
+        <item>Metropolis</item>
+        <item>Regreso al futuro (trilogia)</item>
+    </string-array>
+
+</resources>
