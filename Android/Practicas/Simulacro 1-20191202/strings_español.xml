@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Un Simulacro</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="titulo">Elige tu bebida</string>
+    <string name="Informacion">Has elegido</string>
+</resources>

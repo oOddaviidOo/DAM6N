@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Une perceuse</string>
+    <string name="titulo">Choisissez votre boisson</string>
+    <string name="Informacion">Vous avez choisi</string>
+</resources>
